@@ -140,5 +140,26 @@
             </div>
           </footer>
     </div>  
+          // Function to show the popup
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+// Check if the device is a mobile or tablet based on screen width
+function checkDevice() {
+    if (window.innerWidth <= 768) { // Typically, 768px is the cutoff for tablets
+        showPopup();
+    }
+}
+
+// Run the checkDevice function when the page loads
+window.onload = checkDevice;
+
+    </script>
 </body>
 </html>
